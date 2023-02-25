@@ -12,6 +12,10 @@ public class EncoderUtil {
     }
 
     public static String convertIntoBinaryForm(String line) throws EncoderException {
+        if (line.isEmpty()) {
+            throw new EncoderException(NOT_VALID_ENCODED_STRING);
+        }
+
         char[] symbols = line.toCharArray();
 
         StringBuilder str = new StringBuilder();

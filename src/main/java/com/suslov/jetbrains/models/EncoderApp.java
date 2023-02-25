@@ -25,6 +25,10 @@ public class EncoderApp {
         this.scanner = scanner;
     }
 
+    public boolean isEnd() {
+        return isEnd;
+    }
+
     public void launch() {
         do {
             System.out.println(OPERATION_CHOICE);
